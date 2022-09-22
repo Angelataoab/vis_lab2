@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Introduction to JavaScript</title>
+
+    <!-- Load CSS files -->
+    
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <!-- You CSS rules-->
+    <link rel="stylesheet" href="style.css" />
+   
+    <!-- Load Javascript files -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
+
+    <!-- bar-chart rendering -->
+    <script defer src="barchart.js"></script>
+
+    <!-- Your code -->
+    <script defer src="script.js"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Global Attractions Attendance</h1>
+
+      <div class="user-control">
+        <select id="attraction-category" class="form-control">
+          <option value="all">All Attractions</option>
+          <option value="Theme Park">Theme Park</option>
+          <option value="Water Park">Water Park</option>
+          <option value="Museum">Museum</option>
+        </select>
+      </div>
+
+      <!-- Parent container of our bar chart -->
+      <div id="chart-area"></div>
+    </div>
+
+    <div id="tooltip" class="hidden">
+      <p><strong>Annual Visitors</strong></p>
+      <p><span id="value">0</span></p>
+    </div>
+
+   
+  </body>
+</html>
